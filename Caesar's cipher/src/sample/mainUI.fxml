@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="874.0" style="-fx-background-color: #494846;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="image" fitHeight="566.0" fitWidth="874.0" layoutX="248.0" layoutY="-43.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@electric-guitar-guitar-hands-96872.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="keyTextField" alignment="CENTER" layoutX="116.0" layoutY="522.0" prefHeight="44.0" prefWidth="114.0" promptText="key..." style="-fx-border-color: #494846; -fx-background-color: #494846; -fx-text-fill: #d3d2cf;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="116.0">
+         <font>
+            <Font name="Candara" size="15.0" />
+         </font>
+      </TextField>
+      <JFXTextArea fx:id="editedTextArea" editable="false" focusColor="#47464500" layoutX="232.0" layoutY="284.0" prefHeight="280.0" prefWidth="640.0" promptText="Edited Text..." style="-fx-border-color: #494846; -fx-background-color: #494846; -fx-text-fill: #d3d2cf; -fx-prompt-text-fill: #d3d2cf;" unFocusColor="#47464500" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="284.0">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="decryptButton" alignment="CENTER" layoutX="116.0" onMouseClicked="#decryptButton" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #494846; -fx-background-radius: 0px;" text="Decrypt" textFill="#d3d2cf">
+         <font>
+            <Font name="Candara" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cryptButton" alignment="CENTER" onMouseClicked="#cryptButton" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #ECECEC; -fx-background-radius: 0px;" text="Crypt" textFill="#8d8d8d">
+         <font>
+            <Font name="Candara" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label contentDisplay="CENTER" layoutY="522.0" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #ECECEC;" text="Enter key:" textFill="#8d8d8d" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Candara" size="21.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label contentDisplay="CENTER" layoutY="476.0" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #494846;" text="Choose file:" textFill="#d3d2cf" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Candara" size="21.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="chooseFileButton" alignment="CENTER" layoutX="116.0" layoutY="476.0" onMouseClicked="#chooseFileButton" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #ECECEC; -fx-background-radius: 0px;" text="..." textFill="#8d8d8d" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="116.0">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="enterTextArea" focusColor="#47464500" layoutX="232.0" prefHeight="235.0" prefWidth="640.0" promptText="Enter Text..." style="-fx-border-color: #ECECEC; -fx-text-fill: #8d8d8d; -fx-prompt-text-fill: #8d8d8d; -fx-background-color: #ECECEC;" unFocusColor="#47464500" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font name="Candara" size="14.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
