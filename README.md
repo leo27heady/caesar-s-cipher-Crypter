@@ -1,2 +1,2 @@
-# caesar-s-cipher-Crypter
+# caesars-cipher-Crypter
 A data cipher designed for pleasure. Caesar's algorithms were used for encryption and decryption.
